@@ -126,7 +126,19 @@ span{
 }
 
 footer{
-   display: grid;
-   place-content: center;
-   align-items: center;
+   height: 14vh;
+   width: 100%;
+}
+
+footer p{
+    text-align: center;
+    padding-left: 20px;
+}
+
+h2{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 22px;
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
