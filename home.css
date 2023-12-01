@@ -31,17 +31,17 @@ input:focus {
 
 input {
     border: none;
-    font-size: 13px;
+    font-size: 12px;
     padding-left: 4%;
     padding-right: 30px; 
-    height: 8vh;
+    height: 7vh;
     width: 100%; 
     border-radius: 10px;
 }
 
 .lupa-icon {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     position: absolute;
     right: 20px; 
     cursor: pointer; 
@@ -55,7 +55,7 @@ input {
 
 
 header img{
-    width: 55px;
+    height: 50px;
 }
 
 h2{
@@ -72,7 +72,7 @@ p{
 nav {
     display: grid;
     padding-left: 25px;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 10px;
     width: 100%;
     overflow: auto; 
@@ -90,18 +90,18 @@ nav::-webkit-scrollbar-thumb {
 
 
 nav p {
-    position: fixed;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
     font-size: 16px;
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .categ{
-    height: 5vh;
+    height: 4vh;
 }
 
 .categSquares {
     display: flex;
+    width: 100vw;
     gap: 10px;
     white-space: nowrap; 
 }
@@ -121,34 +121,35 @@ main {
     display: grid;
     padding-left: 25px;
     width: 100%;
-    overflow: auto;
+    /* overflow: auto; */
     box-sizing: border-box;
     scrollbar-width: thin;
 }
 
-main::-webkit-scrollbar {
-    width: 0.5rem;
-}
-
-main::-webkit-scrollbar-thumb {
-    background-color: transparent;
-}
 
 .pizzas {
     display: flex;
     gap: 5px;
     white-space: nowrap;
+    overflow: auto;
+}
+
+.pizzas::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.pizzas::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 main p {
-    position: fixed;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
     font-size: 16px;
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .favs {
-    height: 3.5vh;
+    height: 3vh;
 }
 
 .pizza {
@@ -195,13 +196,18 @@ section{
     display: grid;
     padding-left: 25px;
     width: 100%;
-    overflow: auto;
     box-sizing: border-box;
-    scrollbar-width: thin;
+}
+
+.pizzasRecom::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.pizzasRecom::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 section p{
-    position: fixed;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
     font-size: 16px;
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -210,6 +216,7 @@ section p{
 .pizzasRecom{
     width: 100%;
     display: flex;
+    overflow: auto;
     gap: 10px;
 }
 
@@ -217,3 +224,70 @@ section p{
     height: 3.5vh;
 }
 
+
+.price{
+    background-color: #F01212;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 8px 8px 8px 8px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 6px;
+}
+
+.pizza_name {
+    color: #fff;
+    font-size: 13px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
+    border-radius: 0 0 0px 8px; 
+    overflow: hidden;
+    height: 5vh;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+ section span{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
+    color: #fff;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+article{
+    display: grid;
+    padding-left: 25px;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+article p{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
+    color: #fff;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bebidasDiv{
+    display: grid;
+    height: 9vh;
+    width: 85vw;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.479);
+    border-radius: 8px;
+    background-color: #ffff;
+} 
+
+article img{
+    padding: 6px;
+}
+
+.drink{
+    display: flex;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+article span{
+    font-size: 12px;
+    color: #00000088;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
