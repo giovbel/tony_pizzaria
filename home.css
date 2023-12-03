@@ -7,7 +7,13 @@
 body{
     height: 100vh;
     width: 100vw;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 .sombra{
     background: linear-gradient(#fc7a008c 20%, #fc7a008c 50%, #fc7a0000);
@@ -61,12 +67,11 @@ header img{
 h2{
     color: white;
     font-size: 25px;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 
 p{
     color: white;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav {
@@ -92,7 +97,6 @@ nav::-webkit-scrollbar-thumb {
 nav p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
     font-size: 16px;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .categ{
@@ -145,7 +149,6 @@ main {
 main p {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
     font-size: 16px;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .favs {
@@ -177,7 +180,6 @@ main p {
     font-size: 11px;
     padding: 4px 8px;
     border-radius: 8px 8px 8px 8px;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 6px;
 }
 
@@ -189,10 +191,9 @@ main p {
     border-radius: 0 0 0px 8px; 
     overflow: hidden;
     height: 5vh;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-section{
+section {
     display: grid;
     padding-left: 25px;
     width: 100%;
@@ -207,87 +208,139 @@ section{
     background-color: transparent;
 }
 
-section p{
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
-    font-size: 16px;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.recomenda {
+    height: 3.5vh;
 }
 
-.pizzasRecom{
+.pizzasRecom {
     width: 100%;
     display: flex;
     overflow: auto;
     gap: 10px;
 }
 
-.recomenda{
-    height: 3.5vh;
+.pizza-card {
+    position: relative;
 }
 
+.pizza-card img {
+    border-radius: 8px;
+}
 
-.price{
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.price, span {
+    font-size: 13px;
+    margin: 0;
+}
+
+.price {
+    font-weight: bold;
     background-color: #F01212;
     color: #fff;
-    font-size: 10px;
-    padding: 4px 8px;
-    border-radius: 8px 8px 8px 8px;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 6px;
+    border-radius: 30px;
+    font-size: 12px;
+    height: 18px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 
-.pizza_name {
+section span {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
     color: #fff;
     font-size: 13px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
-    border-radius: 0 0 0px 8px; 
-    overflow: hidden;
-    height: 5vh;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 120px;
 }
 
-
- section span{
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
-    color: #fff;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
 article{
     display: grid;
     padding-left: 25px;
     gap: 10px;
     width: 100%;
+    height: 30vh;
     box-sizing: border-box;
 }
 
 article p{
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.683);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.72);
     color: #fff;
     font-size: 16px;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.bebidasDiv{
+.bebidasDiv {
     display: grid;
-    height: 9vh;
-    width: 85vw;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.479);
+    height: 10vh;
+    width: 87vw;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.653);
     border-radius: 8px;
     background-color: #ffff;
-} 
+    position: relative;
+}
 
-article img{
+
+ article img{
+    height: 10vh;
     padding: 6px;
 }
 
 .drink{
     display: flex;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info{
+    padding: 7px;
 }
 
 article span{
-    font-size: 12px;
-    color: #00000088;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    line-height: 14px;
+    display: grid;
+    color: #000000b0;
 }
+
+h5{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.preco {
+    background-color: #F01212;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    height: 3vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+footer {
+    background-color: #F27706;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
