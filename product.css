@@ -85,36 +85,36 @@
     margin-top: 23px;
     gap: 8px;
     color: rgba(0, 0, 0, 0.622);
-  }
-  
-  .comentarios {
+}
+
+.comentarios {
     margin-top: 10px;
     overflow: auto;
     height: 19vh;
     display: grid;
     gap: 10px;
-    width: 100vw;
-    scrollbar-width: thin; 
+    width: 90vw;
+    scrollbar-width: thin;
 }
 
- .comentarios::-webkit-scrollbar {
+.comentarios::-webkit-scrollbar {
     width: 0.5rem;
 }
 
 .comentarios::-webkit-scrollbar-thumb {
-    background-color: transparent; 
+    background-color: transparent;
 }
-  
-  
-  .container {
+
+.container {
+    position: relative;
     padding: 12px;
     background-color: #f5f5f5;
     border-radius: 10px;
     height: 110px;
-    width: 90%;
+    width: 96%;
 }
 
- .perfil{
+.perfil {
     width: 10px;
     color: #AEA6A6;
     font-size: 15px;
@@ -124,26 +124,39 @@
     width: 8vw;
 }
 
-span{
+span {
     width: 10px;
     font-size: 11px;
 }
 
-.nameDat{
+.nameDat {
     display: grid;
     margin-bottom: 5px;
-} 
+}
 
-.comentarios h4{
+.comentarios h4 {
     color: #AEA6A6;
     font-size: 13px;
 }
 
-.container p{
+.container p {
     font-size: 12px;
 }
 
-.nameDat p{
+.nameDat p {
     font-size: 13px;
-} 
+    width: 35vw;
+}
 
+.star-rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 2px;
+    padding: 12px;
+}
+
+.star-rating img {
+    width: 20px;
+}
