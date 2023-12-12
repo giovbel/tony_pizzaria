@@ -29,6 +29,38 @@ header{
     padding-bottom: 20px;
 }
 
+.photo{
+    background-color: #999999;
+    height: 100px;
+    width: 100px;
+    background-image: url(./img/person.png);
+    background-position: center;
+    border-radius: 50%;
+}
+
+.addImg{
+    border: none;
+    padding: 7px;
+    background-color: red;
+    place-items: center;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    margin-left: 200px;
+    position: relative;
+    bottom: 52px;
+}
+
+
+.addImg img{
+    width: 25px;
+}
+
+.addImg input{
+    display: none;
+    margin-bottom: 12px;
+}
+
 .pessoa{
     position: absolute;
     display: grid;
